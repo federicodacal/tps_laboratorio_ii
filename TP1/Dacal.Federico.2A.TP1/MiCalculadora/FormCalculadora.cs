@@ -13,11 +13,19 @@ namespace MiCalculadora
 {
     public partial class FormCalculadora : Form
     {
+        /// <summary>
+        /// Constructor de FormCalculadora
+        /// </summary>
         public FormCalculadora()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Se carga el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
             cmbOperador.Items.Add("");
@@ -30,11 +38,19 @@ namespace MiCalculadora
 
         }
 
+        /// <summary>
+        /// Llama al método Limpiar que reestablece los campos del formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             this.Limpiar();
         }
 
+        /// <summary>
+        /// Reestablece y limpia los campos txtNumero1, txtNumero2, lblResultado, lstOperaciones y cmbOperador
+        /// </summary>
         private void Limpiar()
         {
             this.txtNumero1.Clear();
@@ -44,6 +60,13 @@ namespace MiCalculadora
             this.lstOperaciones.Items.Clear();
         }
 
+        /// <summary>
+        /// Realiza la operacion aritmetica a traves del metodo Operar de la Clase Calculadora
+        /// </summary>
+        /// <param name="numero1">Obtenido del txtNumero1</param>
+        /// <param name="numero2">Obtenido del txtNumero2</param>
+        /// <param name="operador">Obtenido del cmbOperador</param>
+        /// <returns>Resultado de la operacion</returns>
         private static double Operar(string numero1, string numero2, string operador)
         {
             double resultado;
@@ -59,6 +82,11 @@ namespace MiCalculadora
             return resultado;
         }
 
+        /// <summary>
+        /// Obtiene los valores de los campos textbox y el operador del combobox para realizar su operacion mediante el metodo Operar del Form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             double resultado;
@@ -87,11 +115,21 @@ namespace MiCalculadora
             this.lblResultado.Text = resultado.ToString();
         }
 
+        /// <summary>
+        /// Cierra el formulario en caso de hacerse efectiva la confirmacion del usuario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// Maneja el cierre de la aplicacion, se pide la confirmacion del usuario para finalizar el programa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
             if(e.CloseReason == CloseReason.UserClosing)
@@ -104,6 +142,11 @@ namespace MiCalculadora
             }
         }
 
+        /// <summary>
+        /// Se realiza conversion a binario mediante el metodo DecimalBinario de la Clase Operando
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(this.lblResultado.Text))
@@ -113,6 +156,11 @@ namespace MiCalculadora
             }
         }
 
+        /// <summary>
+        /// Se realiza la conversion a decimal mediante el metodo DecimalBinario de la Clase Operando
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             string auxBinario;

@@ -10,26 +10,45 @@ namespace Entidades
     {
         private double numero;
 
+        /// <summary>
+        /// Constructor parametrizado que recibe un double
+        /// </summary>
+        /// <param name="numero">Valor al que se inicializa el atributo numero</param>
         public  Operando(double numero)
         {
             this.numero = numero;
         }
 
+        /// <summary>
+        /// Constructor sin parametros, al llamarse establece el atributo numero en 0
+        /// </summary>
         public Operando():this(0)
         {
 
         }
 
+        /// <summary>
+        /// Constructor parametrizado que recibe un string
+        /// </summary>
+        /// <param name="numero">Valor al que se inicializa mediante Propiedad Numero</param>
         public Operando(string numero)
         {
             this.Numero = numero;
         }
 
+        /// <summary>
+        /// Propiedad que permite setear el atributo numero, valida el operando y asigna
+        /// </summary>
         private string Numero
         {
             set { this.numero = ValidarOperando(value); }
         }
 
+        /// <summary>
+        /// Valida que el operando sea de tipo numerico (double)
+        /// </summary>
+        /// <param name="strNumero">String a analizar</param>
+        /// <returns>El operando validado double o en caso contrario devolvera 0</returns>
         private double ValidarOperando(string strNumero)
         {
             double numero;
@@ -42,6 +61,11 @@ namespace Entidades
             return numero;
         }
 
+        /// <summary>
+        /// Analiza un string para reconocer si todos sus caracteres son 1s y 0s
+        /// </summary>
+        /// <param name="binario">String a analizar</param>
+        /// <returns>True si es binario o False si no lo es</returns>
         private bool EsBinario(string binario)
         {
             for (int i = 0; i < binario.Length; i++)
@@ -126,20 +150,27 @@ namespace Entidades
             }
         }
 
-        // Sobrecarga de operadores para realizar las operaciones aritmetica +,-,* o / del atributo numero de los Operandos
+        // Sobrecarga de operadores para realizar las operaciones aritmeticas +,-,* o / del atributo numero de los objetos de tipo Operando
+        
+        // Suma de dos numeros
         public static double operator +(Operando n1, Operando n2)
         {
             return n1.numero + n2.numero;
         }
 
+        // Resta de dos numeros
         public static double operator -(Operando n1, Operando n2)
         {
             return n1.numero - n2.numero;
         }
+
+        // Multiplicacion de dos numeros
         public static double operator *(Operando n1, Operando n2)
         {
             return n1.numero * n2.numero;
         }
+
+        // Division de dos numeros, en caso que el segundo operando sea 0 devolverá el MinValue de double
         public static double operator /(Operando n1, Operando n2)
         {
             if (n2.numero != 0)

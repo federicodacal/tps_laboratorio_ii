@@ -19,6 +19,13 @@ namespace Entidades
             return operadorValido;
         }
 
+        /// <summary>
+        /// En caso de validar el char operador mediante el metodo ValidarOperador permite operar aritmeticamente con el atributo numero de la Clase Operando
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <param name="operador"></param>
+        /// <returns></returns>
         public static double Operar(Operando num1, Operando num2, char operador)
         {
             char auxOperador;
