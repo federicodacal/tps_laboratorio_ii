@@ -107,7 +107,7 @@ namespace MiCalculadora
             {
                 auxNumero2 = numero2;
             }
-            if(cmbOperador.SelectedItem is null)
+            if (cmbOperador.SelectedItem is null || cmbOperador.SelectedIndex == 0) 
             {
                 auxOperador = "+";
             }

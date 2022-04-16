@@ -79,14 +79,27 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Permite convertir un valor binario a decimal
+        /// Permite convertir un valor binario a decimal en caso de recibir un numero negativo o con parte decimal trabajara con su valor absoluto y entero
         /// </summary>
         /// <param name="binario">String a convertir</param>
         /// <returns>Valor convertido a decimal o "Valor invalido" si no fue posible la conversion</returns>
         public string BinarioDecimal(string binario)
         {
             double resultado = 0;
-            int length = binario.Length;
+            double auxNumero;
+            int length;
+
+            if(double.TryParse(binario, out auxNumero))
+            {
+                auxNumero = Math.Truncate(auxNumero);
+                if(auxNumero < 0)
+                {
+                    auxNumero*=-1;
+                }
+                binario = auxNumero.ToString();
+            }
+
+            length = binario.Length;
 
             if (this.EsBinario(binario))
             {
@@ -114,8 +127,10 @@ namespace Entidades
         public string DecimalBinario(double numero)
         {
             string binarioStr = string.Empty;
+            numero = Math.Truncate(numero);
             int resultadoDivision = (int)numero;
             int restoDivision;
+
             if (resultadoDivision >= 0)
             {
                 do
@@ -133,13 +148,19 @@ namespace Entidades
             }
         }
         /// <summary>
-        /// Permite convertir un numero decimal a binario
+        /// Permite convertir un numero decimal a binario, en caso de recibir un numero negativo o con parte decimal trabajara con su valor absoluto y entero
         /// </summary>
         /// <param name="numero">Numero a convertir</param>
         /// <returns>Numero convertido a binario o "Valor invalido" si no lo pudo convertir</returns>
         public string DecimalBinario(string numero)
         {
             double numeroConvertido;
+
+            if(numero[0] == '-')
+            {
+                numero = numero.Remove(0, 1);
+            }
+
             if (double.TryParse(numero, out numeroConvertido))
             {
                 return DecimalBinario(numeroConvertido);
