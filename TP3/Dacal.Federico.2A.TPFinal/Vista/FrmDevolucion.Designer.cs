@@ -81,6 +81,7 @@ namespace Vista
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDevolucion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Devolucion";
             this.Load += new System.EventHandler(this.FrmDevolucion_Load);
             this.ResumeLayout(false);
