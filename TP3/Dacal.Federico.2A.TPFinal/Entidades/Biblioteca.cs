@@ -51,15 +51,6 @@ namespace Entidades
             get { return Biblioteca.email; }            
         }
 
-        public static bool AgregarPublicacion(Publicacion publicacion)
-        {
-            bool rta = false;
-            if(!Biblioteca.PublicacionEstaEnCatalogo(publicacion))
-            {
-                Biblioteca.Publicaciones.Add(publicacion);
-            }
-            return rta;
-        }
 
         private static bool ExisteSocio(Socio socio)
         {
@@ -135,7 +126,14 @@ namespace Entidades
             {
                 socio.ListaPrestamos.Remove(prestamo);
                 Biblioteca.Prestamos.Remove(prestamo);
-                prestamo.Publicacion.EstaDisponible = true;
+                foreach (Publicacion item in Biblioteca.Publicaciones)
+                {
+                    if(item == prestamo.Publicacion)
+                    {
+                        item.EstaDisponible = true;
+                        break;
+                    }
+                }
             }
         }      
     }

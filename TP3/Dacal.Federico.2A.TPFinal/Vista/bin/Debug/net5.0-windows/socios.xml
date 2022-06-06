@@ -21,9 +21,7 @@
     <ListaPrestamos>
       <Prestamo>
         <FechaPrestamo>2022-06-06T01:44:38.7288866-03:00</FechaPrestamo>
-        <DatosSocio>Socio: Lopez, Juana
-DNI: 4323367
-</DatosSocio>
+        <DatosSocio />
         <Publicacion xsi:type="Novela">
           <Id>N106</Id>
           <Titulo>The Waves</Titulo>
@@ -54,21 +52,7 @@ DNI: 4323367
     <Dni>32119768</Dni>
     <Genero>Masculino</Genero>
     <FechaNacimiento>1993-11-01T00:00:00</FechaNacimiento>
-    <ListaPrestamos>
-      <Prestamo>
-        <FechaPrestamo>2022-06-06T00:10:46.6253281-03:00</FechaPrestamo>
-        <DatosSocio />
-        <Publicacion xsi:type="Novela">
-          <Id>N109</Id>
-          <Titulo>Murder on the Orient Express</Titulo>
-          <Autor>Agatha Christie</Autor>
-          <Editorial>US Print</Editorial>
-          <AnioPublicacion>1934</AnioPublicacion>
-          <EstaDisponible>false</EstaDisponible>
-          <Generos />
-        </Publicacion>
-      </Prestamo>
-    </ListaPrestamos>
+    <ListaPrestamos />
   </Socio>
   <Socio>
     <Apellido>Fernandez</Apellido>
@@ -78,21 +62,7 @@ DNI: 4323367
     <Dni>38333223</Dni>
     <Genero>Femenino</Genero>
     <FechaNacimiento>1993-04-11T00:00:00</FechaNacimiento>
-    <ListaPrestamos>
-      <Prestamo>
-        <FechaPrestamo>2022-06-06T00:10:36.2854379-03:00</FechaPrestamo>
-        <DatosSocio />
-        <Publicacion xsi:type="Novela">
-          <Id>N107</Id>
-          <Titulo>Sense and Sensibility</Titulo>
-          <Autor>Jane Austen</Autor>
-          <Editorial>UK Print</Editorial>
-          <AnioPublicacion>1811</AnioPublicacion>
-          <EstaDisponible>false</EstaDisponible>
-          <Generos />
-        </Publicacion>
-      </Prestamo>
-    </ListaPrestamos>
+    <ListaPrestamos />
   </Socio>
   <Socio>
     <Apellido>Carrasco</Apellido>
@@ -102,20 +72,6 @@ DNI: 4323367
     <Dni>40113800</Dni>
     <Genero>Masculino</Genero>
     <FechaNacimiento>1999-12-01T00:00:00</FechaNacimiento>
-    <ListaPrestamos>
-      <Prestamo>
-        <FechaPrestamo>2022-06-06T00:10:28.5138903-03:00</FechaPrestamo>
-        <DatosSocio />
-        <Publicacion xsi:type="Novela">
-          <Id>N108</Id>
-          <Titulo>Salem's Lot</Titulo>
-          <Autor>Stephen King</Autor>
-          <Editorial>Doubleday</Editorial>
-          <AnioPublicacion>1975</AnioPublicacion>
-          <EstaDisponible>false</EstaDisponible>
-          <Generos />
-        </Publicacion>
-      </Prestamo>
-    </ListaPrestamos>
+    <ListaPrestamos />
   </Socio>
 </ArrayOfSocio>

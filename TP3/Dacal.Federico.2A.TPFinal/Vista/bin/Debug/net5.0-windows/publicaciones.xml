@@ -6,8 +6,11 @@
     <Autor>Aldous Huxley</Autor>
     <Editorial>Universal</Editorial>
     <AnioPublicacion>1932</AnioPublicacion>
-    <EstaDisponible>true</EstaDisponible>
-    <Generos />
+    <EstaDisponible>false</EstaDisponible>
+    <Generos>
+      <EGeneroLiterario>CienciaFiccion</EGeneroLiterario>
+      <EGeneroLiterario>Distopia</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N101</Id>
@@ -16,7 +19,10 @@
     <Editorial>Universal</Editorial>
     <AnioPublicacion>1949</AnioPublicacion>
     <EstaDisponible>true</EstaDisponible>
-    <Generos />
+    <Generos>
+      <EGeneroLiterario>CienciaFiccion</EGeneroLiterario>
+      <EGeneroLiterario>Distopia</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N102</Id>
@@ -25,7 +31,10 @@
     <Editorial>Serialised</Editorial>
     <AnioPublicacion>1869</AnioPublicacion>
     <EstaDisponible>true</EstaDisponible>
-    <Generos />
+    <Generos>
+      <EGeneroLiterario>Drama</EGeneroLiterario>
+      <EGeneroLiterario>Realista</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N103</Id>
@@ -34,7 +43,10 @@
     <Editorial>Serialised</Editorial>
     <AnioPublicacion>1878</AnioPublicacion>
     <EstaDisponible>true</EstaDisponible>
-    <Generos />
+    <Generos>
+      <EGeneroLiterario>Drama</EGeneroLiterario>
+      <EGeneroLiterario>Realista</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N104</Id>
@@ -43,7 +55,10 @@
     <Editorial>Sudamericana</Editorial>
     <AnioPublicacion>1967</AnioPublicacion>
     <EstaDisponible>true</EstaDisponible>
-    <Generos />
+    <Generos>
+      <EGeneroLiterario>Drama</EGeneroLiterario>
+      <EGeneroLiterario>Realista</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N105</Id>
@@ -52,7 +67,10 @@
     <Editorial>Sudamericana</Editorial>
     <AnioPublicacion>1985</AnioPublicacion>
     <EstaDisponible>true</EstaDisponible>
-    <Generos />
+    <Generos>
+      <EGeneroLiterario>Drama</EGeneroLiterario>
+      <EGeneroLiterario>Realista</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N106</Id>
@@ -60,8 +78,11 @@
     <Autor>Virginia Woolf</Autor>
     <Editorial>Hogarth</Editorial>
     <AnioPublicacion>1931</AnioPublicacion>
-    <EstaDisponible>false</EstaDisponible>
-    <Generos />
+    <EstaDisponible>true</EstaDisponible>
+    <Generos>
+      <EGeneroLiterario>Drama</EGeneroLiterario>
+      <EGeneroLiterario>Fantasia</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N107</Id>
@@ -69,8 +90,11 @@
     <Autor>Jane Austen</Autor>
     <Editorial>UK Print</Editorial>
     <AnioPublicacion>1811</AnioPublicacion>
-    <EstaDisponible>false</EstaDisponible>
-    <Generos />
+    <EstaDisponible>true</EstaDisponible>
+    <Generos>
+      <EGeneroLiterario>Drama</EGeneroLiterario>
+      <EGeneroLiterario>Realista</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N108</Id>
@@ -78,8 +102,11 @@
     <Autor>Stephen King</Autor>
     <Editorial>Doubleday</Editorial>
     <AnioPublicacion>1975</AnioPublicacion>
-    <EstaDisponible>false</EstaDisponible>
-    <Generos />
+    <EstaDisponible>true</EstaDisponible>
+    <Generos>
+      <EGeneroLiterario>Terror</EGeneroLiterario>
+      <EGeneroLiterario>Misterio</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N109</Id>
@@ -87,8 +114,11 @@
     <Autor>Agatha Christie</Autor>
     <Editorial>US Print</Editorial>
     <AnioPublicacion>1934</AnioPublicacion>
-    <EstaDisponible>false</EstaDisponible>
-    <Generos />
+    <EstaDisponible>true</EstaDisponible>
+    <Generos>
+      <EGeneroLiterario>Policial</EGeneroLiterario>
+      <EGeneroLiterario>Misterio</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="Novela">
     <Id>N110</Id>
@@ -97,7 +127,9 @@
     <Editorial>Minotauro</Editorial>
     <AnioPublicacion>1962</AnioPublicacion>
     <EstaDisponible>true</EstaDisponible>
-    <Generos />
+    <Generos>
+      <EGeneroLiterario>Fantasia</EGeneroLiterario>
+    </Generos>
   </Publicacion>
   <Publicacion xsi:type="PublicacionUniversitaria">
     <Id>PUNIV001</Id>

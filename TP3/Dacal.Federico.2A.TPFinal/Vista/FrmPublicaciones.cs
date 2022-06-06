@@ -40,6 +40,11 @@ namespace Vista
             get { return (Publicacion)this.dgvPublicaciones.CurrentRow.DataBoundItem; }
         }
 
+        public static string PathPublicaciones
+        {
+            get { return FrmPublicaciones.pathPublicaciones; }
+        }
+
         private void MessageBoxError(Exception ex)
         {
             MessageBox.Show(ex.Message, "Ocurrió un problema", MessageBoxButtons.OK, MessageBoxIcon.Warning);

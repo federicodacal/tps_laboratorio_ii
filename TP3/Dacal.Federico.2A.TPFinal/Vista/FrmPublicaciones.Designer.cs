@@ -53,6 +53,7 @@ namespace Vista
             this.dgvPublicaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPublicaciones.Location = new System.Drawing.Point(20, 12);
             this.dgvPublicaciones.Name = "dgvPublicaciones";
+            this.dgvPublicaciones.ReadOnly = true;
             this.dgvPublicaciones.RowHeadersWidth = 62;
             this.dgvPublicaciones.RowTemplate.Height = 33;
             this.dgvPublicaciones.Size = new System.Drawing.Size(756, 629);

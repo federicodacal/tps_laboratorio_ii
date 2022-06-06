@@ -188,5 +188,21 @@ namespace Vista
                 this.MessageBoxError(ex);
             }
         }
+
+        private void btnDevolucion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(this.Socio is not null && this.Socio.ListaPrestamos.Count > 0)
+                {
+                    FrmDevolucion frmDevolucion = new FrmDevolucion(this.Socio);
+                    frmDevolucion.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                this.MessageBoxError(ex);
+            }
+        }
     }
 }

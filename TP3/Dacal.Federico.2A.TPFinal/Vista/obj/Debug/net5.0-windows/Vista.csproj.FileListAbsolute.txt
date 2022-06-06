@@ -25,3 +25,4 @@ C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP3\Dacal.Federico.
 C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP3\Dacal.Federico.2A.TPFinal\Vista\bin\Debug\net5.0-windows\socios.xml
 C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP3\Dacal.Federico.2A.TPFinal\Vista\obj\Debug\net5.0-windows\Vista.FrmPublicaciones.resources
 C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP3\Dacal.Federico.2A.TPFinal\Vista\bin\Debug\net5.0-windows\publicaciones.xml
+C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP3\Dacal.Federico.2A.TPFinal\Vista\obj\Debug\net5.0-windows\Vista.FrmDevolucion.resources

@@ -36,6 +36,7 @@ namespace Vista
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnPrestamo = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnDevolucion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +111,7 @@ namespace Vista
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardar.Location = new System.Drawing.Point(1136, 220);
+            this.btnGuardar.Location = new System.Drawing.Point(1136, 271);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(254, 46);
             this.btnGuardar.TabIndex = 11;
@@ -118,12 +119,24 @@ namespace Vista
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // btnDevolucion
+            // 
+            this.btnDevolucion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDevolucion.Location = new System.Drawing.Point(1136, 220);
+            this.btnDevolucion.Name = "btnDevolucion";
+            this.btnDevolucion.Size = new System.Drawing.Size(254, 46);
+            this.btnDevolucion.TabIndex = 12;
+            this.btnDevolucion.Text = "Devolucion";
+            this.btnDevolucion.UseVisualStyleBackColor = true;
+            this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
+            // 
             // FrmSocios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(1394, 666);
+            this.Controls.Add(this.btnDevolucion);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnPrestamo);
             this.Controls.Add(this.btnVolver);
@@ -152,5 +165,6 @@ namespace Vista
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnPrestamo;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnDevolucion;
     }
 }
