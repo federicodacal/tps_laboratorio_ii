@@ -17,3 +17,9 @@ C:\Users\feder\Desktop\TP-02\Entidades\obj\Debug\Entidades.csproj.AssemblyRefere
 C:\Users\feder\Desktop\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\feder\Desktop\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\feder\Desktop\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP2\TP-02\Entidades\bin\Debug\Entidades.dll
+C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP2\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
+C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb

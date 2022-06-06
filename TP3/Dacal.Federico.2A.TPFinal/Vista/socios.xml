@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSocio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Socio>
+    <Apellido>Perez</Apellido>
+    <Nombre>Pedro</Nombre>
+    <EsEstudiante>true</EsEstudiante>
+    <Email>pedroperez@gmail.com</Email>
+    <Dni>42323765</Dni>
+    <Genero>Masculino</Genero>
+    <FechaNacimiento>2000-12-01T00:00:00</FechaNacimiento>
+    <ListaPrestamos />
+  </Socio>
+  <Socio>
+    <Apellido>Lopez</Apellido>
+    <Nombre>Juana</Nombre>
+    <EsEstudiante>true</EsEstudiante>
+    <Email>juanalop@gmail.com</Email>
+    <Dni>4323367</Dni>
+    <Genero>Femenino</Genero>
+    <FechaNacimiento>2001-01-02T00:00:00</FechaNacimiento>
+    <ListaPrestamos />
+  </Socio>
+  <Socio>
+    <Apellido>Perez</Apellido>
+    <Nombre>Juan Carlos</Nombre>
+    <EsEstudiante>false</EsEstudiante>
+    <Email>juanca@yahoo.com</Email>
+    <Dni>31324445</Dni>
+    <Genero>Masculino</Genero>
+    <FechaNacimiento>1992-02-05T00:00:00</FechaNacimiento>
+    <ListaPrestamos />
+  </Socio>
+  <Socio>
+    <Apellido>Alonso</Apellido>
+    <Nombre>Alfonso</Nombre>
+    <EsEstudiante>false</EsEstudiante>
+    <Email>alal@gmail.com</Email>
+    <Dni>32119768</Dni>
+    <Genero>Masculino</Genero>
+    <FechaNacimiento>1993-11-01T00:00:00</FechaNacimiento>
+    <ListaPrestamos />
+  </Socio>
+  <Socio>
+    <Apellido>Fernandez</Apellido>
+    <Nombre>Ana</Nombre>
+    <EsEstudiante>true</EsEstudiante>
+    <Email>anaf@gmail.com</Email>
+    <Dni>38333223</Dni>
+    <Genero>Femenino</Genero>
+    <FechaNacimiento>1993-04-11T00:00:00</FechaNacimiento>
+    <ListaPrestamos />
+  </Socio>
+  <Socio>
+    <Apellido>Carrasco</Apellido>
+    <Nombre>Miguel</Nombre>
+    <EsEstudiante>true</EsEstudiante>
+    <Email>miguecarrasco@hotmail.com</Email>
+    <Dni>40113800</Dni>
+    <Genero>Masculino</Genero>
+    <FechaNacimiento>1999-12-01T00:00:00</FechaNacimiento>
+    <ListaPrestamos />
+  </Socio>
+</ArrayOfSocio>

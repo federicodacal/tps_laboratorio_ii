@@ -1,0 +1,1 @@
+﻿public enum ECampo { Computacion, IT, IA, Matematica, CienciaDeDatos, Telecomunicaciones, Electronica, Mecanica, Quimica, Industrial, Sociologia, Antropologia, Energias, Negocios, Economia }
