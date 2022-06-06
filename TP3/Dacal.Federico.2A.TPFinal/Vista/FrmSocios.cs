@@ -198,6 +198,10 @@ namespace Vista
                     FrmDevolucion frmDevolucion = new FrmDevolucion(this.Socio);
                     frmDevolucion.ShowDialog();
                 }
+                else
+                {
+                    MessageBox.Show("No tiene devoluciones pendientes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
