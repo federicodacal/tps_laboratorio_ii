@@ -16,11 +16,19 @@ namespace Entidades
         private string datosSocio;
         private decimal costo;
 
+        /// <summary>
+        /// Constructor por defecto de Prestamo
+        /// </summary>
         public Prestamo()
         {
 
         }
 
+        /// <summary>
+        /// Constructor parametrizado de Prestamo
+        /// </summary>
+        /// <param name="publicacion"></param>
+        /// <param name="socio"></param>
         public Prestamo(Publicacion publicacion, Socio socio)
         {
             this.publicacion = publicacion;
@@ -29,23 +37,36 @@ namespace Entidades
             this.AsignarCostoPrestamo();
         }
 
+        /// <summary>
+        /// Propiedad de L/E de atributo fechaPrestamo
+        /// </summary>
         public DateTime FechaPrestamo
         {
             get { return this.fechaPrestamo; }
             set { this.fechaPrestamo = value; }
         }
 
+        /// <summary>
+        /// Propiedad de L/E de atributo socio
+        /// </summary>
         private Socio Socio
         {
             get { return this.socio; }
             set { this.socio = value; }
         }
 
+        /// <summary>
+        /// Propiedad de L/E del costo
+        /// </summary>
         public decimal Costo
         {
             get { return this.costo; }
+            set { this.costo = value; }
         }
 
+        /// <summary>
+        /// Propiedad de L/E de datos del atributo socios
+        /// </summary>
         public string DatosSocio
         {
             get 
@@ -59,12 +80,18 @@ namespace Entidades
             set { this.datosSocio = value; }
         }
 
+        /// <summary>
+        /// Propiedad de L/E de atributo publicacion
+        /// </summary>
         public Publicacion Publicacion
         {
             get { return this.publicacion; }
             set { this.publicacion = value; }
         }
 
+        /// <summary>
+        /// Asigna el costo del prestamo segun tipo de publicacion y si el socio es estudiante UTN
+        /// </summary>
         public void AsignarCostoPrestamo()
         {
             if(this.Publicacion.GetType() == typeof(PublicacionUniversitaria))
@@ -85,6 +112,10 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Sobrescritura del metodo ToString()
+        /// </summary>
+        /// <returns>Retorna los datos del prestamo</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -97,12 +128,20 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Path del Ticket
+        /// </summary>
         [JsonIgnore]
         public string PathTicket
         {
             get { return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Tickets"); }
         }
 
+        /// <summary>
+        /// Guarda un archivo .txt con los datos del prestamo
+        /// </summary>
+        /// <param name="path">Ruta</param>
+        /// <returns>True si pudo, falso en caso contrario</returns>
         public bool ImprimirTicket(string path)
         {
             bool rta = false;

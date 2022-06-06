@@ -9,9 +9,18 @@ using System.Xml.Serialization;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Clase genérica para serializar y deserializar .xml y .json
+    /// </summary>
+    /// <typeparam name="T">Tipo de referencia con constructor por defecto</typeparam>
     public class Serializadora<T> : ISerializableJson<T>
         where T : class, new()
     {
+        /// <summary>
+        /// Serializa a xml
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="objeto"></param>
         public static void Serializar(string path, T objeto)
         {
             using (StreamWriter sw = new StreamWriter(path))
@@ -21,6 +30,11 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Deserializa a partir de xml
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static T Deserializar(string path)
         {
             T objeto = null;
@@ -35,6 +49,11 @@ namespace Entidades
             return objeto;
         }
 
+        /// <summary>
+        /// Serializa a json
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="contenido"></param>
         void ISerializableJson<T>.Serializar(string path, T contenido)
         {
             if (!Directory.Exists(path))
@@ -53,6 +72,11 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Deserializa a partir de json
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         T ISerializableJson<T>.Deserializar(string path)
         {
             T contenido = null;
