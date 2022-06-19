@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPublicacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Publicacion xsi:type="Novela">
+    <Id>N100</Id>
+    <Titulo>Brave New World</Titulo>
+    <Autor>Aldous Huxley</Autor>
+    <Editorial>Universal</Editorial>
+    <AnioPublicacion>1932</AnioPublicacion>
+    <EstaDisponible>false</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N101</Id>
+    <Titulo>1984</Titulo>
+    <Autor>George Orwell</Autor>
+    <Editorial>Universal</Editorial>
+    <AnioPublicacion>1949</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N102</Id>
+    <Titulo>War and Peace</Titulo>
+    <Autor>Leo Tolstoy</Autor>
+    <Editorial>Serialised</Editorial>
+    <AnioPublicacion>1869</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N103</Id>
+    <Titulo>Anna Karenina</Titulo>
+    <Autor>Leo Tolstoy</Autor>
+    <Editorial>Serialised</Editorial>
+    <AnioPublicacion>1878</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N104</Id>
+    <Titulo>Cien años de Soledad</Titulo>
+    <Autor>Gabriel García Márquez</Autor>
+    <Editorial>Sudamericana</Editorial>
+    <AnioPublicacion>1967</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N105</Id>
+    <Titulo>El amor en tiempos de cólera</Titulo>
+    <Autor>Gabriel García Márquez</Autor>
+    <Editorial>Sudamericana</Editorial>
+    <AnioPublicacion>1985</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N106</Id>
+    <Titulo>The Waves</Titulo>
+    <Autor>Virginia Woolf</Autor>
+    <Editorial>Hogarth</Editorial>
+    <AnioPublicacion>1931</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N107</Id>
+    <Titulo>Sense and Sensibility</Titulo>
+    <Autor>Jane Austen</Autor>
+    <Editorial>UK Print</Editorial>
+    <AnioPublicacion>1811</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N108</Id>
+    <Titulo>Salem's Lot</Titulo>
+    <Autor>Stephen King</Autor>
+    <Editorial>Doubleday</Editorial>
+    <AnioPublicacion>1975</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N109</Id>
+    <Titulo>Murder on the Orient Express</Titulo>
+    <Autor>Agatha Christie</Autor>
+    <Editorial>US Print</Editorial>
+    <AnioPublicacion>1934</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="Novela">
+    <Id>N110</Id>
+    <Titulo>Historias de Cronopios y de Famas</Titulo>
+    <Autor>Julio Cortázar</Autor>
+    <Editorial>Minotauro</Editorial>
+    <AnioPublicacion>1962</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Generos />
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV001</Id>
+    <Titulo>C# Avanzado</Titulo>
+    <Autor>Federico Dávila</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2019</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Computacion</ECampo>
+    </Campos>
+    <Catedra>Laboratorio II</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV002</Id>
+    <Titulo>Programación Multi-hilo</Titulo>
+    <Autor>Lucas Rodriguez</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2021</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Computacion</ECampo>
+    </Campos>
+    <Catedra>Laboratorio II</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV003</Id>
+    <Titulo>Principios SOLID</Titulo>
+    <Autor>Mauricio Cerizza</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2021</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Computacion</ECampo>
+      <ECampo>IT</ECampo>
+    </Campos>
+    <Catedra>Laboratorio II</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV004</Id>
+    <Titulo>Guía de Arduino con C</Titulo>
+    <Autor>Christian Baus</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2018</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Computacion</ECampo>
+      <ECampo>Electronica</ECampo>
+    </Campos>
+    <Catedra>Sist. Procesamiento de Datos</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV005</Id>
+    <Titulo>Problemáticas Sociales del Siglo XXI</Titulo>
+    <Autor>Jorge Suarez</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2018</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Sociologia</ECampo>
+    </Campos>
+    <Catedra>Ciencias Sociales</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV006</Id>
+    <Titulo>Analisis de Datos y Sistemas</Titulo>
+    <Autor>Romeo Rescaldani</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2018</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>IT</ECampo>
+      <ECampo>CienciaDeDatos</ECampo>
+    </Campos>
+    <Catedra>Analisis de Sistemas</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV007</Id>
+    <Titulo>Ciencia de Datos para Negocios</Titulo>
+    <Autor>José Suar</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2022</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Negocios</ECampo>
+      <ECampo>CienciaDeDatos</ECampo>
+    </Campos>
+    <Catedra>Ciencia de Datos</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV008</Id>
+    <Titulo>Teoría de Juegos y Geopolítica</Titulo>
+    <Autor>Laura Gómez</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2020</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Economia</ECampo>
+      <ECampo>Matematica</ECampo>
+    </Campos>
+    <Catedra>Probabilidad y Estadística</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV009</Id>
+    <Titulo>Energía Nuclear</Titulo>
+    <Autor>Florencia J. Rossini</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2014</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Energias</ECampo>
+    </Campos>
+    <Catedra>Ing. Civil</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="PublicacionUniversitaria">
+    <Id>PUNIV010</Id>
+    <Titulo>Algoritmos: Inteligencia Artificial</Titulo>
+    <Autor>Roberto Miguelete</Autor>
+    <Editorial>UTN-Fra</Editorial>
+    <AnioPublicacion>2021</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Computacion</ECampo>
+      <ECampo>IA</ECampo>
+    </Campos>
+    <Catedra>Programación Avanzada</Catedra>
+  </Publicacion>
+  <Publicacion xsi:type="Paper">
+    <Id>P-001</Id>
+    <Titulo>Machine learning: Trends, perspectives, and prospects</Titulo>
+    <Autor>T.M. Mitchell</Autor>
+    <Editorial>Science AAAS</Editorial>
+    <AnioPublicacion>2015</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>IA</ECampo>
+      <ECampo>Computacion</ECampo>
+    </Campos>
+  </Publicacion>
+  <Publicacion xsi:type="Paper">
+    <Id>P-002</Id>
+    <Titulo>Machine Learning in Agriculture</Titulo>
+    <Autor>Konstantinos Liakos</Autor>
+    <Editorial>LIAT</Editorial>
+    <AnioPublicacion>2018</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>IA</ECampo>
+      <ECampo>Economia</ECampo>
+    </Campos>
+  </Publicacion>
+  <Publicacion xsi:type="Paper">
+    <Id>P-003</Id>
+    <Titulo>Fundamental Algorithms</Titulo>
+    <Autor>Donald Knuth</Autor>
+    <Editorial>LIAT</Editorial>
+    <AnioPublicacion>1973</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Computacion</ECampo>
+      <ECampo>IT</ECampo>
+    </Campos>
+  </Publicacion>
+  <Publicacion xsi:type="Paper">
+    <Id>P-004</Id>
+    <Titulo>Data Mining Algorithms</Titulo>
+    <Autor>Cristóbal Romero</Autor>
+    <Editorial>U. de Córdoba</Editorial>
+    <AnioPublicacion>2021</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Computacion</ECampo>
+      <ECampo>CienciaDeDatos</ECampo>
+    </Campos>
+  </Publicacion>
+  <Publicacion xsi:type="Paper">
+    <Id>P-005</Id>
+    <Titulo>Oil in the Seas</Titulo>
+    <Autor>Franklyn Hobart</Autor>
+    <Editorial>National Research</Editorial>
+    <AnioPublicacion>2003</AnioPublicacion>
+    <EstaDisponible>true</EstaDisponible>
+    <Campos>
+      <ECampo>Energias</ECampo>
+      <ECampo>Quimica</ECampo>
+    </Campos>
+  </Publicacion>
+</ArrayOfPublicacion>
