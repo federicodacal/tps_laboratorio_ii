@@ -21,3 +21,4 @@ C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP4\Dacal.Federico.
 C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP4\Dacal.Federico.2A.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP4\Dacal.Federico.2A.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP4\Dacal.Federico.2A.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\feder\Desktop\tps_laboratorio_ii\tps_laboratorio_ii\TP4\Dacal.Federico.2A.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache

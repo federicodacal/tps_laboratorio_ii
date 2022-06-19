@@ -15,7 +15,7 @@ namespace Entidades
 
         static SocioDAO()
         {
-            connectionString = @"Data Source=localhost;Initial Catalog=BIBLIOTECA_UTN; Integrated Security=True";
+            connectionString = @"Data Source=localhost;Initial Catalog=DB_BIBLIOTECA_UTN; Integrated Security=True";
 
             command = new SqlCommand();
             connection = new SqlConnection(connectionString);

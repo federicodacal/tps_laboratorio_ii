@@ -1,4 +1,25 @@
-USE BIBLIOTECA_UTN;
+CREATE DATABASE DB_BIBLIOTECA_UTN;
+GO
+
+USE DB_BIBLIOTECA_UTN;
+GO
+
+CREATE TABLE Socios
+(dni bigint primary key,
+nombre varchar(50) not null,
+apellido varchar(60) not null,
+email varchar(150) not null,
+es_estudiante bit not null,
+genero int not null,
+fecha_nacimiento date not null);
+GO
+
+CREATE TABLE Prestamos
+(id varchar(10) primary key,
+fecha_prestamo date not null,
+dni_socio bigint not null,
+titulo varchar(150) not null);
+GO
 
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('1033011746', 'Konstantin', 'Normadell', 'knormadell0@so-net.ne.jp', '7/26/1943', 1, 0);
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('9461044437', 'Peadar', 'Whysall', 'pwhysall1@apple.com', '3/3/1940', 2, 0);
@@ -60,7 +81,6 @@ insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_e
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('9879561627', 'Lynda', 'Shipsey', 'lshipsey1l@google.ru', '9/15/1945', 0, 1);
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('7857116491', 'Melba', 'Andell', 'mandell1m@desdev.cn', '8/13/1955', 0, 1);
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('3333122677', 'Rubetta', 'Cockrem', 'rcockrem1n@ucla.edu', '11/16/1996', 2, 0);
-
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('6390049145', 'Blakelee', 'Raffeorty', 'braffeorty0@china.com.cn', '11/4/1986', 1, 0);
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('8899662398', 'Conn', 'Seater', 'cseater1@tinyurl.com', '12/28/2003', 0, 0);
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('7447615269', 'Carolina', 'Oylett', 'coylett2@addthis.com', '8/19/1984', 0, 1);
@@ -81,11 +101,3 @@ insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_e
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('7885196399', 'Kevin', 'Axtonne', 'kaxtonneh@cisco.com', '12/31/1994', 0, 1);
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('6652673126', 'Hanna', 'Habbin', 'hhabbini@angelfire.com', '7/9/1977', 1, 0);
 insert into Socios (dni, nombre, apellido, email, fecha_nacimiento, genero, es_estudiante) values ('3576571434', 'Barbe', 'Hogsden', 'bhogsdenj@unesco.org', '1/14/2004', 0, 0);
-
-SELECT * FROM Socios;
-
-SELECT * FROM Prestamos;
-
-DELETE FROM Prestamos;
-
-

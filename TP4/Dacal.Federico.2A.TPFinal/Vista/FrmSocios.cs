@@ -106,7 +106,7 @@ namespace Vista
                 {
                     if(this.Socio.ListaPrestamos.Count > 0)
                     {
-                        MessageBox.Show($"El socio {this.Socio.Apellido}, aún tiene préstamos vigentes, no puede ser dando de baja hasta no completar las devoluciones", "Remover Socio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"El socio {this.Socio.Apellido}, aún tiene préstamos vigentes, no puede ser dado de baja hasta no completar las devoluciones", "Remover Socio", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entidades.Biblioteca" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBAABUGIAEQAiAAACAAAAAAAAAAAAAAECAAAJAAA=</HashCode>
+      <FileName>Biblioteca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.DateTimeExtension" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>DateTimeExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Novela" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAEgEAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Novela.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Paper" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAAACAAAAAgAAA=</HashCode>
+      <FileName>Paper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Prestamo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAGAABBIAAAASAEIAQECCAAAggAgAAAAAAAEEAAAhA=</HashCode>
+      <FileName>Prestamo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Entidades.PrestamoDAO">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAgAAAABAAAAAAQAAAAAIAAABAAAAAA=</HashCode>
+      <FileName>PrestamoDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Publicacion" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgCAQAAQAAAAEAEAAAAAAEAAAABAAAAAAAAEAAIAjU=</HashCode>
+      <FileName>Publicacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.PublicacionUniversitaria" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAABCAAAAQgAAA=</HashCode>
+      <FileName>PublicacionUniversitaria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Serializadora&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAgACAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Serializadora.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Entidades.Socio" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEQAAABECQAAACkgAAAgAIAQAACAkAAAAAAAJAAAiA=</HashCode>
+      <FileName>Socio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.SocioDAO">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAgACAABAAAAAAQAAAAAIAAABAAAAAA=</HashCode>
+      <FileName>SocioDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.SocioEventArgs" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SocioEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.TicketException" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Entidades.ISerializableJson&lt;T&gt;" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ISerializableJson.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entidades.ITicket" Collapsed="true">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITicket.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ECampo" Collapsed="true">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAGAAAQAASAAAEAAAAAAAAAgAKAAAAAAAAgABIg=</HashCode>
+      <FileName>ECampo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Entidades.LimitePrestamosDelegado" Collapsed="true">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Biblioteca.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

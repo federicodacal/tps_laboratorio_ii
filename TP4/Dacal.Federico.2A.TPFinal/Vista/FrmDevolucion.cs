@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
@@ -16,10 +17,12 @@ namespace Vista
         private Socio socio;
         private List<Prestamo> prestamos;
         private Prestamo prestamoSeleccionado;
+        private CancellationTokenSource cts;
 
         private FrmDevolucion()
         {
             InitializeComponent();
+            this.cts = new CancellationTokenSource();
         }
 
         public FrmDevolucion(Socio socio):this()
@@ -43,7 +46,14 @@ namespace Vista
 
         private void GuardarDatos()
         {
-            Serializadora<List<Publicacion>>.Serializar(FrmPublicaciones.PathPublicaciones, Biblioteca.Publicaciones);
+            try
+            {
+                Serializadora<List<Publicacion>>.Serializar(FrmPublicaciones.PathPublicaciones, Biblioteca.Publicaciones);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un problema {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }  
         }
 
         private void RecuperarDatos()
@@ -53,8 +63,15 @@ namespace Vista
 
         private void RefrescarListBox()
         {
-            this.lstPrestamos.DataSource = null;
-            this.lstPrestamos.DataSource = this.prestamos.ToList();
+            try
+            {
+                this.lstPrestamos.DataSource = null;
+                this.lstPrestamos.DataSource = this.prestamos.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un problema {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -62,7 +79,7 @@ namespace Vista
             this.Close();
         }
 
-        private void btnRecibir_Click(object sender, EventArgs e)
+        private async void btnRecibir_Click(object sender, EventArgs e)
         {
             try
             {
@@ -70,23 +87,39 @@ namespace Vista
 
                 if (this.prestamoSeleccionado is not null)
                 {
-                    Biblioteca.RecibirDevolucion(this.socio, this.prestamoSeleccionado);
+                    Biblioteca.RecibirDevolucion(this.socio, this.prestamoSeleccionado);                                 
+                    if (PrestamoDAO.Borrar(this.prestamoSeleccionado))
+                    {
+                        this.btnCancelarComprobante.Enabled = true;
 
-                    if (PrestamoDAO.Borrar(this.prestamoSeleccionado.Id))
-                    {
-                        this.RefrescarListBox();
-                        this.GuardarDatos();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Ocurrió un problema", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        bool rtaComprobante = await Biblioteca.EntregarComprobante(this.socio, this.prestamoSeleccionado, cts.Token);
+
+                        if (rtaComprobante)
+                        {
+                            MessageBox.Show("Devolución exitosa!", "Publicación recibida",      MessageBoxButtons.OK, MessageBoxIcon.Information);                      
+                        }
                     }
                 }
+            }
+            catch (TaskCanceledException ex)
+            {
+                MessageBox.Show($"No se emitió comprobante: {ex.Message}", "Comprobante cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                this.RefrescarListBox();
+                this.GuardarDatos();
+            }
+        }
+
+        private void btnCancelarComprobante_Click(object sender, EventArgs e)
+        {
+            this.cts.Cancel();
+            this.btnCancelarComprobante.Enabled = false;
         }
     }
 }

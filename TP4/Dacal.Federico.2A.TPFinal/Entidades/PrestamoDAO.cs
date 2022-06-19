@@ -15,7 +15,7 @@ namespace Entidades
 
         static PrestamoDAO()
         {
-            connectionString = @"Data Source=localhost;Initial Catalog=BIBLIOTECA_UTN; Integrated Security=True";
+            connectionString = @"Data Source=localhost;Initial Catalog=DB_BIBLIOTECA_UTN; Integrated Security=True";
             command = new SqlCommand();
             connection = new SqlConnection(connectionString);
             command.Connection = connection;
@@ -56,15 +56,15 @@ namespace Entidades
             }
         }
 
-        public static bool Borrar(string id)
+        public static bool Borrar(Prestamo p)
         {
             bool rta;
             try
             {
                 command.Parameters.Clear();
                 connection.Open();
-                command.CommandText = $"DELETE FROM Prestamos WHERE ID = {id}";
-                command.Parameters.AddWithValue("@id", id);
+                command.CommandText = $"DELETE FROM Prestamos WHERE id = @idPrestamo";
+                command.Parameters.AddWithValue("@idPrestamo", p.Id);
 
                 int affectedRows = command.ExecuteNonQuery();
 

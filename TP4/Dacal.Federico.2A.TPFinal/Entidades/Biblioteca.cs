@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Entidades
 {
@@ -219,6 +221,49 @@ namespace Entidades
             }
         }
 
+        public static async Task<bool> EntregarComprobante(Socio s, Prestamo p, CancellationToken ct)
+        {
+            bool rta = false;
+            rta = await Task.Run(async() =>
+            {
+                try
+                {
+                    await Task.Delay(3000);
+
+                    if (ct.IsCancellationRequested)
+                    {
+                        throw new TaskCanceledException("La impresión del comprobante ha sido detenida");
+                    }
+                    else
+                    {
+                        string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Comprobantes");
+
+                        if (!Directory.Exists(path))
+                        {
+                            Directory.CreateDirectory(path);
+                        }
+
+                        using (StreamWriter sw = new StreamWriter(Path.Combine(path, $"Comprobante_{s.Apellido}_{DateTime.Now.ToString("HH_mm_ss")}.txt")))
+                        {
+                            sw.WriteLine(Biblioteca.Denominacion);
+                            sw.WriteLine(Biblioteca.Email);
+                            sw.WriteLine("*****************************************");
+                            sw.WriteLine($"Socio: {s.Apellido} - DNI: {s.Dni}");
+                            sw.WriteLine($"ha devuelto la publicación {p.Id} {p.Titulo} en la fecha {DateTime.Now.ToShortDateString()} a las {DateTime.Now.ToLongTimeString()}");
+                            sw.WriteLine("*****************************************");
+
+                            await Task.Delay(2000);
+                            return true;
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw;
+                }
+            });
+            return rta;
+        }
 
     }
 }

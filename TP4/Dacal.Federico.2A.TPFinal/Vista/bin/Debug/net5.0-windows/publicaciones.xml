@@ -6,7 +6,7 @@
     <Autor>Aldous Huxley</Autor>
     <Editorial>Universal</Editorial>
     <AnioPublicacion>1932</AnioPublicacion>
-    <EstaDisponible>false</EstaDisponible>
+    <EstaDisponible>true</EstaDisponible>
     <Generos />
   </Publicacion>
   <Publicacion xsi:type="Novela">

@@ -56,7 +56,7 @@ namespace Vista
         private bool EsValidoEmail(string email)
         {
             bool rta = false;
-            if(EsValidoString(email, 6, 40) && new EmailAddressAttribute().IsValid(email))
+            if(new EmailAddressAttribute().IsValid(email))
             {
                 rta = true;
             }
@@ -169,6 +169,7 @@ namespace Vista
                 if (this.Socio is not null)
                 {
                     this.Text = $"Modificar socio {this.Socio.Apellido}";
+                    this.txtDni.Enabled = false;
                     this.txtApellido.Text = this.Socio.Apellido;
                     this.txtNombre.Text = this.Socio.Nombre;
                     this.txtDni.Text = this.Socio.Dni.ToString();
